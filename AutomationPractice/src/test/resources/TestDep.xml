@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"> <!--All the infor & autosuggestions-->
+<suite name="Suite for Dependency">
+ 
+  <test name="Groupingtest">
+  <groups>
+  <dependencies>
+  <group name="Launch" depends-on="Deisclamer"></group>
+  <group name="click after launch" depends-on="Launch"></group>
+  </dependencies>
+  </groups>
+    <classes>
+      <class name="TestNGPractice.TestngDependencies"/>
+    </classes>
+  </test>  
+</suite> 
